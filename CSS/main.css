@@ -1,0 +1,39 @@
+
+
+.section__span {
+    background-color: rgb(21, 124, 176);
+}
+
+.container__table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tableCell {
+    border: 3px solid rgb(235, 237, 102);
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tableHeader {
+    background-color: rgb(12, 117, 68);
+    color: white;
+    font-weight: normal;
+}
+
+.tableRow:hover {
+    background-color: rgb(235, 224, 127)
+}
+
+.container__menu {
+    font-style: italic;
+    font-size: 30px;
+}
+
+.section__item {
+    padding-left: 30px;
+}
+.section__item--other {
+    list-style-type: circle;
+}

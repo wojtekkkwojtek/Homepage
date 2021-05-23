@@ -1,0 +1,25 @@
+.navigation__list {
+    list-style-type: none;
+}
+
+.navigation__link {
+    color: rgb(23, 7, 245);
+}
+
+.navigation__link:visited {
+    color: rgb(12, 117, 68);
+}
+
+.navigation__link:focus {
+    outline: 3px solid green;
+}
+
+.navigation__link:hover {
+    color: brown;
+    border-bottom: 1px solid;
+    outline: none;
+}
+
+.navigation__link:active {
+    color: red;
+}
