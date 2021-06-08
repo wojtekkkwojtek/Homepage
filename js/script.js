@@ -1,37 +1,24 @@
 console.log("It's good to have you here")
 
-let header__buttonTheme = document.querySelector(".header__buttonTheme");
-let background = document.querySelector(".background");
-let header__spanThemeName = document.querySelector(".header__spanThemeName");
-let header__spanShowHide = document.querySelector(".header__spanShowHide");
-let header__spanNameSurname = document.querySelector(".header__spanNameSurname");
+let headerButtonTheme = document.querySelector(".js-headerButtonTheme");
+let body = document.querySelector(".js-body");
+let headerTheme = document.querySelector(".js-headerTheme");
+let headerShow = document.querySelector(".js-headerShow");
+let headerName = document.querySelector(".js-headerName");
 
-header__buttonTheme.addEventListener("click", () => {
-    background.classList.toggle("backgroundDark");
+headerButtonTheme.addEventListener("click", () => {
+    body.classList.toggle("body--dark");
 
-    if (background.classList.contains("backgroundDark")) {
-        header__spanThemeName.innerText = "JASNY MOTYW";
-    }
-    else {
-        header__spanThemeName.innerText = "CIEMNY MOTYW";
-    }
-
-
-
+    headerTheme.innerText = body.classList.contains("body--dark") ? "JASNY MOTYW" : "CIEMNY MOTYW";
 });
 
-header__spanShowHide.addEventListener("click", () => {
-    if (header__spanNameSurname.innerText === "Wojciech K"){
-        header__spanShowHide.innerText = "POKAŻ";
+headerShow.addEventListener("click", () => {
+    if(headerName.innerText === "...") {
+        headerShow.innerText = "UKRYJ";
+        headerName.innerText = "Wojciech K";
     }
-        else {header__spanShowHide.innerText = "UKRYJ";
-    }
-});
-
-header__spanShowHide.addEventListener("click", () => {
-    header__spanNameSurname.innerText = "Wojciech K";
-    
-    if (header__spanShowHide.innerText === "POKAŻ"){
-        header__spanNameSurname.innerText = "..."
+    else{
+        headerShow.innerText = "POKAŻ";
+        headerName.innerText = "...";
     }
 });

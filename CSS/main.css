@@ -4,29 +4,31 @@
     background-color: rgb(21, 124, 176);
 }
 
-.container__table {
+.table {
     border-collapse: collapse;
-    width: 100%;
+    overflow-x: auto;
+    max-width: 100%;
+    
 }
 
-.tableCell {
+.table__cell {
     border: 3px solid rgb(235, 237, 102);
     padding: 20px;
     text-align: center;
     vertical-align: middle;
 }
 
-.tableHeader {
+.table__cell--header {
     background-color: rgb(12, 117, 68);
     color: white;
     font-weight: normal;
 }
 
-.tableRow:hover {
+.table__row:hover {
     background-color: rgb(235, 224, 127)
 }
 
-.container__menu {
+.table__menu {
     font-style: italic;
     font-size: 30px;
 }
@@ -36,4 +38,8 @@
 }
 .section__item--other {
     list-style-type: circle;
+}
+
+.section__header {
+    font-size: 23px;
 }

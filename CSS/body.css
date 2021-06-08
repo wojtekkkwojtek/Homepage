@@ -1,4 +1,4 @@
-.background {
+.body {
     background-color: rgb(180, 191, 180);
     font-family: 'Inter', sans-serif;
     line-height: 3;
@@ -9,21 +9,19 @@
     padding: 20px 20px;
 }
 
-.backgroundDark {
+.body--dark {
     background-color: rgb(120, 131, 120);
 }
 
-.background__myPhoto {
+.body__myPhoto {
     display: block;
     margin: 0 auto;
     max-width: 280px;
     height: 300px;
 }
 
-.background__container {
-    overflow-x: auto;
-}
 
-.background__paragraph {
+
+.body__paragraph {
     text-align: center;
 }

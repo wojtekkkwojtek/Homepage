@@ -18,22 +18,25 @@
     margin-bottom: 20px;
 }
 
-.header__buttonName {
-    font-size: 60px;
-    display: block;
-    margin: auto;
+.header__results {
+    font-size: 50px;
+    text-align: center;
+    outline-style:solid;
     background-color: blanchedalmond;
-    margin-bottom: 20px;
+    display: block;
+    margin: 30px 300px;
+    margin-bottom: 30px;
+    max-width: 400px;
 }
 
-.header__headerBigger {
+.header__mainHeader {
     text-align: center;
     color: rgb(61, 52, 235);
     font-size: 35px;
     font-style: oblique;
 }
 
-.header__headerSmaller {
+.header__subHeader {
     text-align: left;
 }
 
