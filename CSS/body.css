@@ -16,7 +16,8 @@
 .body__myPhoto {
     display: block;
     margin: 0 auto;
-    max-width: 280px;
+    width: 100%;
+    max-width: 360px;
     height: 300px;
 }
 
