@@ -4,12 +4,14 @@
     background-color: rgb(21, 124, 176);
 }
 
+.section__table {
+    overflow-x: auto;
+}
+
 .table {
     border-collapse: collapse;
-    overflow-x: auto;
-    max-width: 100%;
-    
-}
+    width: 100%;
+    }
 
 .table__cell {
     border: 3px solid rgb(235, 237, 102);
