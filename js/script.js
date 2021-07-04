@@ -21,18 +21,26 @@
 
     init();
 
-let headerShow = document.querySelector(".js-headerShow");
-let headerName = document.querySelector(".js-headerName");
+    const showOrHide = () => {
+        const headerShow = document.querySelector(".js-headerShow");
+        const headerName = document.querySelector(".js-headerName");
 
-headerShow.addEventListener("click", () => {
-    if(headerName.innerText === "...") {
-        headerShow.innerText = "UKRYJ";
-        headerName.innerText = "Wojciech K";
+        if(headerName.innerText === "...") {
+            headerShow.innerText = "UKRYJ";
+            headerName.innerText = "Wojciech K";
+        }
+        else{
+            headerShow.innerText = "POKAŻ";
+            headerName.innerText = "...";
+        }
     }
-    else{
-        headerShow.innerText = "POKAŻ";
-        headerName.innerText = "...";
+
+    const display = () => {
+        const headerShow = document.querySelector(".js-headerShow");
+        headerShow.addEventListener("click", showOrHide);
     }
-});
+
+    display();
 
 }
+
